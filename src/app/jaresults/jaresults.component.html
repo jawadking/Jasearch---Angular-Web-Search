@@ -1,0 +1,18 @@
+
+  <div id="search-results">
+      <table class='table' *ngIf='results && results.value && results.value.length'>
+        <tr *ngFor='let result of results.value'>
+          <td>
+            {{result.title}}
+          </td>
+     
+        </tr>
+      </table>
+    </div>
+
+ <!--<app-jaresults>
+
+  <div> abc</div>
+ </app-jaresults>-->
+
+ 

@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div>
+    <h2>Go On...Type!</h2>
+
+    <div>
+    <!--<input #searchBox id='searchBox'  />-->
+    
+    
+    <!--<a [routerLink] = "['/results',searchBox.value]">Search</a>-->
+   
+    </div>
+   <form class="form-inline container-fluid">
+  <input type="text" id="searchBox" #searchBox  placeholder="Search for..." 
+  class="form-control">
+  <button (click)="onSearch(searchBox.value)" class="btn">
+   Get me results!</button>
+  </form>
+<br/>
+<br/>
+    <router-outlet></router-outlet>
+
+</div>
